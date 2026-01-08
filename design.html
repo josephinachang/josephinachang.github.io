@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design - Design Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-top: auto;
+        }
+        .nav-buttons {
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contact-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+        }
+        .contact-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .contact-button:hover img {
+            opacity: 0.4;
+        }
+        .home-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .home-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .home-button:hover img {
+            opacity: 0.4;
+        }
+        .design-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .design-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .design-button:hover img {
+            opacity: 0.4;
+        }
+        .fine-arts-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .fine-arts-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .fine-arts-button:hover img {
+            opacity: 0.4;
+        }
+        .about-me-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .about-me-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .about-me-button:hover img {
+            opacity: 0.4;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .custom-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .custom-button img {
+            height: auto;
+            display: block;
+            max-width: 180px;
+        }
+        .image-buttons-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding-top: 30vh;
+            padding-bottom: 100px;
+        }
+        .image-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .image-buttons.left-align {
+            justify-content: flex-start;
+            width: calc(350px * 3 + 30px * 2);
+            margin: 0 auto;
+        }
+        .image-button {
+            width: 350px;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+        .image-button:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="home-button" onclick="window.location.href='index.html'"><img src="images/assets/Home-button.jpg" alt="Home"></button>
+            <button class="design-button" onclick="window.location.href='design.html'"><img src="images/assets/Design-button.jpg" alt="Design"></button>
+            <button class="fine-arts-button" onclick="window.location.href='fine-arts.html'"><img src="images/assets/Fine-arts-button.jpg" alt="Fine Arts"></button>
+            <button class="about-me-button" onclick="window.location.href='about-me.html'"><img src="images/assets/About-me-button.jpg" alt="About Me"></button>
+        </div>
+        <button class="contact-button" onclick="window.location.href='contact.html'"><img src="images/assets/contact-button.jpg" alt="Contact"></button>
+    </div>
+    <div class="button-container">
+        <button class="custom-button" onclick="window.location.href='about-me.html'"><img src="images/assets/button-2.jpg" alt="Button"></button>
+    </div>
+    
+    <div class="image-buttons-container">
+        <div class="image-buttons">
+            <button class="image-button" style="background-image: url('images/work/design-1.jpg');" onclick="window.location.href='SEEDS!.html'"></button>
+            <button class="image-button" style="background-image: url('images/work/design-2.jpg');" onclick="window.location.href='3974.html'"></button>
+            <button class="image-button" style="background-image: url('images/work/design-3.jpg');" onclick="window.location.href='AYEL.html'"></button>
+        </div>
+        <div class="image-buttons">
+            <button class="image-button" style="background-image: url('images/work/design-4.jpg');" onclick="window.location.href='meta-ranger.html'"></button>
+            <button class="image-button" style="background-image: url('images/work/design-5.jpg');" onclick="window.location.href='harley-davidson-rebrand.html'"></button>
+            <button class="image-button" style="background-image: url('images/work/design-6.jpg');" onclick="window.location.href='shoe-design.html'"></button>
+        </div>
+        <div class="image-buttons left-align">
+            <button class="image-button" style="background-image: url('images/work/parch-1.jpg');" onclick="window.location.href='parch.html'"></button>
+            <button class="image-button" style="background-image: url('images/work/hungry-hippo.png');" onclick="window.location.href='hungry-hippo.html'"></button>
+        </div>
+    </div>
+    <footer>© 2025 Josephina Chang. All rights reserved.</footer>
+</body>
+</html>
+

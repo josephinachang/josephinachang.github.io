@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Arts 1 - Design Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-top: auto;
+        }
+        .nav-buttons {
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contact-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+        }
+        .contact-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .contact-button:hover img {
+            opacity: 0.4;
+        }
+        .home-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .home-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .home-button:hover img {
+            opacity: 0.4;
+        }
+        .design-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .design-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .design-button:hover img {
+            opacity: 0.4;
+        }
+        .fine-arts-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .fine-arts-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .fine-arts-button:hover img {
+            opacity: 0.4;
+        }
+        .about-me-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .about-me-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .about-me-button:hover img {
+            opacity: 0.4;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .custom-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .custom-button img {
+            height: auto;
+            display: block;
+            max-width: 180px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex: 1;
+            padding-left: 20px;
+            padding-top: 40px;
+            gap: 30px;
+        }
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+        }
+        .text-label {
+            font-family: Arial, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+        }
+        .text-label-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .text-medium {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="home-button" onclick="window.location.href='index.html'"><img src="images/assets/Home-button.jpg" alt="Home"></button>
+            <button class="design-button" onclick="window.location.href='design.html'"><img src="images/assets/Design-button.jpg" alt="Design"></button>
+            <button class="fine-arts-button" onclick="window.location.href='fine-arts.html'"><img src="images/assets/Fine-arts-button.jpg" alt="Fine Arts"></button>
+            <button class="about-me-button" onclick="window.location.href='about-me.html'"><img src="images/assets/About-me-button.jpg" alt="About Me"></button>
+        </div>
+        <button class="contact-button" onclick="window.location.href='contact.html'"><img src="images/assets/contact-button.jpg" alt="Contact"></button>
+    </div>
+    <div class="button-container">
+        <button class="custom-button" onclick="window.location.href='about-me.html'"><img src="images/assets/button-2.jpg" alt="Button"></button>
+    </div>
+    <div class="image-container">
+        <img src="images/work/fine-arts-1.jpg" alt="Fine Arts 1">
+        <div class="text-label-container">
+            <div class="text-label">SELF PORTRAIT - (2023)</div>
+            <div class="text-medium">ACRYLIC ON CANVAS (DIPTYCH)</div>
+            <div class="text-medium">32 × 20 in</div>
+        </div>
+    </div>
+    <footer>© 2025 Josephina Chang. All rights reserved.</footer>
+</body>
+</html>
+

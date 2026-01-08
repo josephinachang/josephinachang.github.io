@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3974 - Design Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-top: auto;
+        }
+        .nav-buttons {
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contact-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+        }
+        .contact-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .contact-button:hover img {
+            opacity: 0.4;
+        }
+        .home-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .home-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .home-button:hover img {
+            opacity: 0.4;
+        }
+        .design-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .design-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .design-button:hover img {
+            opacity: 0.4;
+        }
+        .fine-arts-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .fine-arts-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .fine-arts-button:hover img {
+            opacity: 0.4;
+        }
+        .about-me-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .about-me-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .about-me-button:hover img {
+            opacity: 0.4;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .custom-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .custom-button img {
+            height: auto;
+            display: block;
+            max-width: 180px;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px 40px;
+            padding-left: 45px;
+            gap: 30px;
+        }
+        .content img {
+            max-width: 30%;
+            height: auto;
+        }
+        .text-content {
+            flex: 1;
+            font-family: "Helvetica LT Pro Light", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+            text-align: left;
+            margin-top: 50px;
+        }
+        .text-content p {
+            margin: 0;
+            padding: 0;
+        }
+        .additional-images {
+            display: flex;
+            flex-direction: column;
+            gap: 200px;
+            margin-top: 30px;
+            padding: 0 40px;
+            padding-left: 45px;
+            align-items: center;
+        }
+        .additional-images img {
+            max-width: 70%;
+            height: auto;
+        }
+        .image-row {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 90vw;
+            margin-left: -40px;
+            padding: 0 40px;
+        }
+        .image-row img {
+            flex: 1;
+            width: 50%;
+            height: auto;
+        }
+        .image-row:last-child {
+            margin-bottom: 200px;
+        }
+        .additional-images img.large {
+            max-width: 90%;
+        }
+        .additional-images img.gap-after {
+            margin-bottom: 100px !important;
+        }
+        .additional-images img.same-size {
+            width: 1000px !important;
+            max-width: 1000px !important;
+            height: auto;
+        }
+        .additional-images img.larger {
+            width: 1200px !important;
+            max-width: 1200px !important;
+            height: auto;
+        }
+        .additional-images img.medium {
+            width: 1150px !important;
+            max-width: 1150px !important;
+            height: auto;
+        }
+        .additional-images img.largest {
+            width: 1250px !important;
+            max-width: 1250px !important;
+            height: auto;
+        }
+        .section-title {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            margin-bottom: -100px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="home-button" onclick="window.location.href='index.html'"><img src="images/assets/Home-button.jpg" alt="Home"></button>
+            <button class="design-button" onclick="window.location.href='design.html'"><img src="images/assets/Design-button.jpg" alt="Design"></button>
+            <button class="fine-arts-button" onclick="window.location.href='fine-arts.html'"><img src="images/assets/Fine-arts-button.jpg" alt="Fine Arts"></button>
+            <button class="about-me-button" onclick="window.location.href='about-me.html'"><img src="images/assets/About-me-button.jpg" alt="About Me"></button>
+        </div>
+        <button class="contact-button" onclick="window.location.href='contact.html'"><img src="images/assets/contact-button.jpg" alt="Contact"></button>
+    </div>
+    <div class="button-container">
+        <button class="custom-button" onclick="window.location.href='about-me.html'"><img src="images/assets/button-2.jpg" alt="Button"></button>
+    </div>
+    <div class="content">
+        <img src="images/work/3974-logo-1.jpg" alt="3974 Logo">
+        <div class="text-content">
+            <p>3974 is a conceptual coffee kiosk branding project designed for USC's Roski Courtyard. The name references the construction years of the Roski buildings that the courtyard is nestled between: Watt Hall (1939) and Harris Hall (1974), grounding the identity in the site's history. Responding to student feedback that the courtyard feels cold and uninviting, the branding introduces a bright, arts-forward visual language to soften the brutalist environment. The kiosk is designed to nest naturally within the courtyard, enhancing the space without disrupting existing circulation or student activity while bringing warmth and energy to the environment.</p>
+        </div>
+    </div>
+    <div class="additional-images">
+        <div class="image-row">
+            <img src="images/work/3974-1.jpg" alt="3974 Image 1">
+            <img src="images/work/3974-2.png" alt="3974 Image 2">
+        </div>
+        <div class="image-row">
+            <img src="images/work/3974-3.png" alt="3974 Image 3">
+            <img src="images/work/3974-4.png" alt="3974 Image 4">
+        </div>
+        <img src="images/work/3974-5.png" alt="3974 Image 5" class="gap-after">
+        <div class="section-title">GRAPHIC DESIGN APPLICATIONS</div>
+        <img src="images/work/3974-6.png" alt="3974 Image 6" class="larger">
+        <img src="images/work/3974-7.png" alt="3974 Image 7" class="medium">
+        <img src="images/work/3974-8.png" alt="3974 Image 8" class="largest">
+        <img src="images/work/3974-9.png" alt="3974 Image 9" class="large">
+    </div>
+    <footer>© 2025 Josephina Chang. All rights reserved.</footer>
+</body>
+</html>
+

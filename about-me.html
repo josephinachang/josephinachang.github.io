@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Design Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-top: auto;
+        }
+        .nav-buttons {
+            padding: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contact-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            margin-left: auto;
+        }
+        .contact-button img {
+            height: 25px;
+            width: auto;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .contact-button:hover img {
+            opacity: 0.4;
+        }
+        .home-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .home-button img {
+            height: 25px !important;
+            width: auto !important;
+            max-width: none !important;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .home-button:hover img {
+            opacity: 0.4;
+        }
+        .design-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .design-button img {
+            height: 25px !important;
+            width: auto !important;
+            max-width: none !important;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .design-button:hover img {
+            opacity: 0.4;
+        }
+        .fine-arts-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .fine-arts-button img {
+            height: 25px !important;
+            width: auto !important;
+            max-width: none !important;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .fine-arts-button:hover img {
+            opacity: 0.4;
+        }
+        .about-me-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .about-me-button img {
+            height: 25px !important;
+            width: auto !important;
+            max-width: none !important;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+        .about-me-button:hover img {
+            opacity: 0.4;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .custom-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .custom-button img {
+            height: auto;
+            display: block;
+            max-width: 180px;
+        }
+        .content-row {
+            display: flex;
+            align-items: flex-start;
+            padding: 50px 20px 0 20px;
+            gap: 30px;
+        }
+        .image-left {
+            max-width: 28%;
+            height: auto;
+            margin: 0;
+            margin-left: 150px;
+            padding: 0;
+        }
+        .text-content {
+            max-width: 750px;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+            margin-right: 150px;
+            margin-top: 50px;
+            font-family: "Helvetica LT Pro Light", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+        .text-content p {
+            margin: 0;
+            padding: 0;
+        }
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 30px 20px 0 20px;
+            gap: 30px;
+            flex: 1;
+        }
+        .image-right {
+            max-width: 32%;
+            height: auto;
+            margin-right: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <button class="home-button" onclick="window.location.href='index.html'"><img src="images/assets/Home-button.jpg" alt="Home"></button>
+            <button class="design-button" onclick="window.location.href='design.html'"><img src="images/assets/Design-button.jpg" alt="Design"></button>
+            <button class="fine-arts-button" onclick="window.location.href='fine-arts.html'"><img src="images/assets/Fine-arts-button.jpg" alt="Fine Arts"></button>
+            <button class="about-me-button" onclick="window.location.href='about-me.html'"><img src="images/assets/About-me-button.jpg" alt="About Me"></button>
+        </div>
+        <button class="contact-button" onclick="window.location.href='contact.html'"><img src="images/assets/contact-button.jpg" alt="Contact"></button>
+    </div>
+    <div class="button-container">
+        <button class="custom-button" onclick="window.location.href='about-me.html'"><img src="images/assets/button-2.jpg" alt="Button"></button>
+    </div>
+    <div class="content-row">
+        <img src="images/about/about-me-1.jpeg" alt="About Me 1" class="image-left">
+        <div class="text-content">
+            <p>Hi, I'm Josephina, a design student at USC Roski, minoring in Designing Products under IYA, with a foundation in fine arts. My practice blends visual communication, hands-on prototyping, and material exploration to develop concept-driven products and experiences. Grounded in close observation and cultural context, I'm drawn to creating lifestyle-focused design that thoughtfully balances function, form, and craft.</p>
+            <p style="margin-top: 40px;">Outside of design, you can find me painting, baking, and spending time outdoors, whether that's hiking, camping, or just being near the water. I also play piano, which I've always enjoyed as a way to unwind and keep my hands busy. I'm someone who loves trying new foods and drinks and learning about different cultures, especially through local cuisine when I travel. At home, that often turns into experimenting in the kitchen and sourcing ingredients locally. These are the things that help me recharge, stay curious, and feel balanced outside of school and projects.</p>
+        </div>
+    </div>
+    <footer>© 2025 Josephina Chang. All rights reserved.</footer>
+</body>
+</html>
+
